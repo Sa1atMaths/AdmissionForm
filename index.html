@@ -145,9 +145,13 @@
   
   
   
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-  
-  
+  <script src="https://www.google.com/recaptcha/api.js?render=6LfBRxorAAAAAOD7U25rO3XHFzRzJiYIoL6ork5I">
+    grecaptcha.ready(function() {
+  grecaptcha.execute('6LfBRxorAAAAAOD7U25rO3XHFzRzJiYIoL6ork5I', {action: 'submit'}).then(function(token) {
+    // you can send the token with form data for verification
+  });
+});
+  </script>
   
   
   <script>
